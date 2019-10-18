@@ -1,8 +1,14 @@
 package ba.unsa.etf.rpr;
 
 public class Korpa {
-    private Artikl[] kupljeno= new Artikl[50];
-    private int brart=0;
+    private Artikl[] kupljeno;
+    private int brart;
+
+    public Korpa(){
+        kupljeno=new Artikl[50];
+        brart=0;
+    }
+
     public Artikl[] getArtikli(){
         return kupljeno;
     }

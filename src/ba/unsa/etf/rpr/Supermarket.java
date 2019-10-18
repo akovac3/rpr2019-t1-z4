@@ -1,8 +1,13 @@
 package ba.unsa.etf.rpr;
 
 public class Supermarket {
-    private Artikl[] proizvodi= new Artikl[1000];
-    int br=0;
+    private Artikl[] proizvodi;
+    int br;
+
+    public Supermarket(){
+        proizvodi= new Artikl[1000];
+        br=0;
+    }
 
     public void dodajArtikl(Artikl art){
         if(br<1000){
