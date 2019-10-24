@@ -23,7 +23,7 @@ public class Korpa {
     public Artikl izbaciArtiklSaKodom(String kod){
         Artikl izbaci=null;
         for(int i=0;i<brart;i++){
-            if(kupljeno[i].kod.equals(kod)){
+            if(kupljeno[i].getKod().equals(kod)){
                 izbaci=kupljeno[i];
                 for(int j=i+1;j<brart;j++)
                     kupljeno[j-1]=kupljeno[j];

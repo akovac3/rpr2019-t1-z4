@@ -2,7 +2,7 @@ package ba.unsa.etf.rpr;
 
 public class Supermarket {
     private Artikl[] proizvodi;
-    int br;
+    private int br;
 
     public Supermarket(){
         proizvodi= new Artikl[1000];
@@ -22,7 +22,7 @@ public class Supermarket {
     public Artikl izbaciArtiklSaKodom(String kod){
         Artikl izbaci=null;
         for(int i=0;i<br;i++){
-            if(proizvodi[i].kod.equals(kod)){
+            if(proizvodi[i].getKod().equals(kod)){
                 izbaci=proizvodi[i];
                 for(int j=i+1;j<br;j++)
                     proizvodi[j-1]=proizvodi[j];
